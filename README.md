@@ -2,7 +2,7 @@
 
 ## 📋 Description
 
-Site web professionnel ultra-optimisé SEO pour service de taxi à Goussainville et Paris. 
+Site web professionnel ultra-optimisé SEO pour service de taxi à Goussainville et Paris.
 Design inspiré d'Uber avec optimisations SEO avancées pour dominer les recherches locales.
 
 **☎️ Contact : 06 28 53 24 73**
@@ -10,12 +10,14 @@ Design inspiré d'Uber avec optimisations SEO avancées pour dominer les recherc
 ## 🌟 Fonctionnalités
 
 ### 🎨 Design
+
 - ✅ Design Uber épuré et minimaliste
 - ✅ Responsive mobile-first
 - ✅ Animations fluides TailwindCSS
 - ✅ Interface moderne et professionnelle
 
 ### 🚀 SEO Ultra-Optimisé
+
 - ✅ **+120 mots-clés** ciblés "taxi Goussainville"
 - ✅ **JSON-LD Schema.org** complet (LocalBusiness, TaxiService)
 - ✅ **FAQ Schema** avec 8 questions-réponses
@@ -26,6 +28,7 @@ Design inspiré d'Uber avec optimisations SEO avancées pour dominer les recherc
 - ✅ **Rich snippets** pour horaires et disponibilité
 
 ### 📱 Fonctionnalités Avancées
+
 - ✅ **Formulaire de réservation** professionnel
 - ✅ **Géolocalisation automatique** des adresses
 - ✅ **Estimation temps** de trajet
@@ -34,12 +37,13 @@ Design inspiré d'Uber avec optimisations SEO avancées pour dominer les recherc
 - ✅ **Service 24h/24** mis en avant
 
 ### 🗺️ Pages Optimisées
+
 - ✅ **Accueil** - Hero + Services + Zones + Contact
 - ✅ **Services** - Détail de tous les services taxi
 - ✅ **Contact** - Informations contact et zones
 - ✅ **Réservation** - Formulaire avancé complet
 - ✅ **Taxi Goussainville CDG** - Page dédiée aéroport
-- ✅ **Taxi Goussainville Orly** - Page dédiée aéroport  
+- ✅ **Taxi Goussainville Orly** - Page dédiée aéroport
 - ✅ **Taxi Goussainville Paris** - Page dédiée Paris
 
 ## 🛠️ Technologies
@@ -72,6 +76,7 @@ npm run dev
 ## 📊 SEO Performance
 
 ### 🎯 Mots-clés Ciblés
+
 - **Primaires**: taxi Goussainville, TAXI GOUSSAINVILLE
 - **Longue traîne**: comment réserver taxi Goussainville, où trouver taxi Goussainville
 - **Urgence**: taxi urgent Goussainville, taxi maintenant Goussainville
@@ -79,6 +84,7 @@ npm run dev
 - **Géolocalisés**: taxi CDG Goussainville, taxi Orly Goussainville
 
 ### 📈 Optimisations Techniques
+
 - **Meta tags**: 25+ meta personnalisés
 - **Schema.org**: LocalBusiness + TaxiService + FAQ + Reviews
 - **Sitemap**: 10+ pages optimisées

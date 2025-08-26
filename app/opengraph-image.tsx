@@ -72,7 +72,6 @@ export default async function Image() {
             display: 'flex',
             fontSize: 40,
             fontWeight: 'bold',
-            color: '#1A1A1A',
             marginTop: 30,
             backgroundColor: '#1A1A1A',
             color: '#FFD700',
@@ -80,7 +79,7 @@ export default async function Image() {
             borderRadius: 15,
           }}
         >
-          📞 01 23 45 67 89
+          📞 06 28 53 24 73
         </div>
       </div>
     ),

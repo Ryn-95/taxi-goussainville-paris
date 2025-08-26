@@ -33,11 +33,11 @@ export default function HeroReservation() {
   ]
 
   // Estimation intelligente du temps uniquement (pro)
-  const calculateEstimate = (from, to) => {
+  const calculateEstimate = (from: string, to: string) => {
     if (!from || !to) return
 
     // Estimation temps de trajet uniquement
-    const distances = {
+    const distances: Record<string, { time: string }> = {
       'CDG Airport': { time: '35-45 min' },
       'Orly Airport': { time: '45-60 min' },
       'Gare du Nord': { time: '25-35 min' },
