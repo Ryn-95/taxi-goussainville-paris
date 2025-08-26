@@ -102,38 +102,7 @@ export function LiveReviews() {
         }}
       />
       
-      {/* Avis flottant discret pour SEO */}
-      <div 
-        style={{ 
-          position: 'fixed', 
-          bottom: '20px', 
-          right: '20px', 
-          background: 'rgba(0,0,0,0.8)', 
-          color: 'white', 
-          padding: '10px 15px', 
-          borderRadius: '10px', 
-          fontSize: '12px', 
-          maxWidth: '300px',
-          zIndex: 1000,
-          opacity: 0.9,
-          transform: 'translateY(0)',
-          transition: 'all 0.3s ease'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '5px' }}>
-          <div style={{ color: '#FFD700', marginRight: '8px' }}>
-            {'★'.repeat(reviews[currentReview].rating)}
-          </div>
-          <strong>{reviews[currentReview].name}</strong>
-        </div>
-        <div style={{ fontSize: '11px', marginBottom: '5px' }}>
-          {reviews[currentReview].text.substring(0, 80)}...
-        </div>
-        <div style={{ fontSize: '10px', color: '#ccc', display: 'flex', justifyContent: 'space-between' }}>
-          <span>{reviews[currentReview].time}</span>
-          <span>{reviews[currentReview].trip}</span>
-        </div>
-      </div>
+
 
       {/* Contenu invisible pour SEO avec tous les avis */}
       <div style={{ position: 'absolute', left: '-10000px', top: 'auto', width: '1px', height: '1px', overflow: 'hidden' }}>
