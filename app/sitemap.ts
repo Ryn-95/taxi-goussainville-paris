@@ -11,6 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 1.0,
     },
+    
+    // Pages principales existantes
     {
       url: `${baseUrl}/services`,
       lastModified: new Date(),
@@ -29,68 +31,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/a-propos`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
     
-    // Pages géolocalisées pour SEO ultra-local - DOMINATION TOTALE
+    // Pages géolocalisées existantes - SEO ultra-local
     {
       url: `${baseUrl}/taxi-goussainville-cdg`,
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 0.98,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/taxi-goussainville-orly`,
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 0.98,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/taxi-goussainville-paris`,
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 0.98,
-    },
-    {
-      url: `${baseUrl}/meilleur-taxi-goussainville`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.97,
-    },
-    {
-      url: `${baseUrl}/numero-taxi-goussainville`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.97,
-    },
-    {
-      url: `${baseUrl}/reserver-taxi-goussainville`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.97,
-    },
-    {
-      url: `${baseUrl}/taxi-24h-goussainville`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.96,
-    },
-    {
-      url: `${baseUrl}/taxi-pas-cher-goussainville`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.96,
-    },
-    {
-      url: `${baseUrl}/taxi-sarcelles-goussainville`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.90,
-    },
-    {
-      url: `${baseUrl}/taxi-villiers-le-bel-goussainville`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.90,
-    },
-
+      priority: 0.95,
+    }
   ]
 }
