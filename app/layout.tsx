@@ -202,10 +202,7 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         
-                            {/* Google Search Console Verification */}
-                    <meta name="google-site-verification" content="Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0" />
-                    
-                    {/* SEO Local Ultra-optimisé */}
+                            {/* SEO Local Ultra-optimisé */}
                     <meta name="geo.region" content="FR-95" />
         <meta name="geo.placename" content="Goussainville" />
         <meta name="geo.position" content="49.0167;2.4667" />
@@ -223,10 +220,12 @@ export default function RootLayout({
         <meta name="location.specific" content="GOUSSAINVILLE CENTRE, GOUSSAINVILLE GARE, GOUSSAINVILLE RER, GOUSSAINVILLE 95190" />
         <meta name="competition.keywords" content="TAXI GOUSSAINVILLE NUMERO 1, PREMIER TAXI GOUSSAINVILLE, TOP TAXI GOUSSAINVILLE, BEST TAXI GOUSSAINVILLE" />
         
-                            {/* Optimisation moteurs de recherche */}
+                                                {/* Google Search Console Verification - UNIQUE ET PROPRE */}
                     <meta name="google-site-verification" content="Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0" />
-        <meta name="msvalidate.01" content="taxi-goussainville-bing-verification" />
-        <meta name="yandex-verification" content="taxi-goussainville-yandex-verification" />
+                    
+                    {/* Optimisation moteurs de recherche */}
+                    <meta name="msvalidate.01" content="taxi-goussainville-bing-verification" />
+                    <meta name="yandex-verification" content="taxi-goussainville-yandex-verification" />
         
         {/* Recherche vocale et assistants */}
         <meta name="voice.search" content="taxi Goussainville, appeler taxi Goussainville, numéro taxi Goussainville" />
