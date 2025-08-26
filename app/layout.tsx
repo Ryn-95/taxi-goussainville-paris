@@ -163,9 +163,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'taxi-goussainville-verification-code',
-  },
+                verification: {
+                google: 'Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0',
+              },
   category: 'Transport',
   classification: 'Taxi, Transport, Service local',
   other: {
@@ -202,8 +202,11 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         
-        {/* SEO Local Ultra-optimisé */}
-        <meta name="geo.region" content="FR-95" />
+                            {/* Google Search Console Verification */}
+                    <meta name="google-site-verification" content="Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0" />
+                    
+                    {/* SEO Local Ultra-optimisé */}
+                    <meta name="geo.region" content="FR-95" />
         <meta name="geo.placename" content="Goussainville" />
         <meta name="geo.position" content="49.0167;2.4667" />
         <meta name="ICBM" content="49.0167, 2.4667" />
@@ -220,8 +223,8 @@ export default function RootLayout({
         <meta name="location.specific" content="GOUSSAINVILLE CENTRE, GOUSSAINVILLE GARE, GOUSSAINVILLE RER, GOUSSAINVILLE 95190" />
         <meta name="competition.keywords" content="TAXI GOUSSAINVILLE NUMERO 1, PREMIER TAXI GOUSSAINVILLE, TOP TAXI GOUSSAINVILLE, BEST TAXI GOUSSAINVILLE" />
         
-        {/* Optimisation moteurs de recherche */}
-        <meta name="google-site-verification" content="taxi-goussainville-verification" />
+                            {/* Optimisation moteurs de recherche */}
+                    <meta name="google-site-verification" content="Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0" />
         <meta name="msvalidate.01" content="taxi-goussainville-bing-verification" />
         <meta name="yandex-verification" content="taxi-goussainville-yandex-verification" />
         
