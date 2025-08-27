@@ -4,12 +4,12 @@ import Image from 'next/image'
 
 export default function VehiculeSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-responsive">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         {/* Layout horizontal ultra épuré comme Uber */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="service-grid auto-responsive-grid grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             {/* Image côté gauche */}
             <div className="relative">
@@ -18,16 +18,16 @@ export default function VehiculeSection() {
                 alt="Taxi professionnel Skoda Superb"
                 width={600}
                 height={400}
-                className="w-full h-80 object-contain"
+                className="vehicle-image image-responsive w-full h-80 object-contain"
               />
             </div>
 
             {/* Contenu côté droit - Style Uber minimal */}
-            <div className="space-y-6">
+            <div className="service-content space-y-6">
               
               {/* Titre principal épuré */}
               <div>
-                <h2 className="text-3xl font-black text-black mb-2" style={{
+                <h2 className="service-title text-responsive-lg text-3xl font-black text-black mb-2" style={{
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif'
                 }}>
                   Véhicule récent et confortable

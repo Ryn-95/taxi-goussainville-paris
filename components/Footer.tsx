@@ -41,7 +41,7 @@ export default function Footer() {
         
         {/* Main Footer Content - EXACTEMENT style Uber */}
         <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="footer-grid grid grid-cols-1 md:grid-cols-4 gap-8">
             
             {/* Logo Section - comme Uber */}
             <div className="space-y-6">

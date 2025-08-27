@@ -237,22 +237,22 @@ Confirmer l'appel ?`)
   }
 
   return (
-    <section className="relative bg-gray-50 pt-20 pb-16 min-h-screen" style={{ 
+    <section className="relative bg-gray-50 pt-20 pb-16 min-h-screen ios-vh-fix" style={{ 
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
     }}>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 hero-container">
         
         {/* Header compact avec titre et CTA */}
-        <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-black leading-tight tracking-tight mb-4">
+        <div className="text-center mb-12 my-responsive">
+          <h1 className="hero-title text-3xl sm:text-4xl lg:text-5xl font-black text-black leading-tight tracking-tight mb-4">
             Assurez votre sérénité avec Taxi Goussainville
           </h1>
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="hero-subtitle text-lg text-gray-600 mb-6">
             Service de taxi professionnel à Goussainville et Paris
           </p>
           
           {/* CTA intégré dans le header */}
-          <div className="inline-flex items-center space-x-3 bg-white border-2 border-black text-black rounded-xl px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <div className="hero-cta-compact inline-flex items-center space-x-3 bg-white border-2 border-black text-black rounded-xl px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 touch-optimized">
             <div className="text-lg animate-pulse">📞</div>
             <div>
               <div className="font-bold text-sm">Appelez maintenant</div>
@@ -265,9 +265,9 @@ Confirmer l'appel ?`)
         </div>
 
         {/* Form simplifié pour la page d'accueil */}
-        <div id="booking" className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 max-w-4xl mx-auto hover:shadow-3xl transition-all duration-700 transform hover:-translate-y-1">
+        <div id="booking" className="booking-form card-responsive bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 max-w-4xl mx-auto hover:shadow-3xl transition-all duration-700 transform hover:-translate-y-1">
 
-          <div className="flex flex-col lg:flex-row items-stretch lg:items-end gap-4">
+          <div className="form-grid flex flex-col lg:flex-row items-stretch lg:items-end gap-4">
             
             {/* From - Avec géolocalisation */}
             <div className="flex-1 min-w-0 group">
@@ -291,7 +291,7 @@ Confirmer l'appel ?`)
                   value={pickup}
                   onChange={(e) => setPickup(e.target.value)}
                   placeholder="Votre adresse exacte ou lieu de départ"
-                  className="flex-1 outline-none text-base bg-transparent font-medium"
+                  className="form-input flex-1 outline-none text-base bg-transparent font-medium"
                   minLength={3}
                 />
                 {pickup && (
@@ -327,7 +327,7 @@ Confirmer l'appel ?`)
                   value={destination}
                   onChange={(e) => setDestination(e.target.value)}
                   placeholder="Où souhaitez-vous aller ?"
-                  className="flex-1 outline-none text-base bg-transparent font-medium"
+                  className="form-input flex-1 outline-none text-base bg-transparent font-medium"
                   minLength={3}
                 />
                 {destination && (
@@ -461,7 +461,7 @@ Confirmer l'appel ?`)
           <div className="mt-8 text-center">
             <a 
               href="/reservation"
-              className="inline-flex items-center space-x-3 px-12 py-4 bg-black text-white rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+              className="form-button btn-responsive touch-optimized inline-flex items-center space-x-3 px-12 py-4 bg-black text-white rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
             >
               <span>🚖</span>
               <span>RÉSERVER MAINTENANT</span>

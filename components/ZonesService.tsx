@@ -59,17 +59,17 @@ export default function ZonesService() {
   ]
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-responsive">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         {/* Title épuré comme les autres sections */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-black text-black mb-2" style={{
+        <div className="text-center mb-16 my-responsive">
+          <h2 className="text-responsive-xl text-3xl font-black text-black mb-2" style={{
             fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif'
           }}>
             Zones de service
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-responsive-base text-lg text-gray-600">
             Une couverture étendue pour tous vos déplacements
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function ZonesService() {
         <div className="space-y-20">
           {zones.map((zone, index) => (
             <div key={index} className="max-w-6xl mx-auto">
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+              <div className={`service-grid auto-responsive-grid grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}>
                 
@@ -89,16 +89,16 @@ export default function ZonesService() {
                     alt={zone.title}
                     width={600}
                     height={400}
-                    className="w-full h-80 object-cover rounded-xl"
+                    className="service-image image-responsive w-full h-80 object-cover rounded-xl"
                   />
                   {/* Badge temps épuré */}
-                  <div className="absolute top-6 right-6 bg-black text-white text-sm font-medium px-4 py-2 rounded-full">
+                  <div className="zone-badge absolute top-6 right-6 bg-black text-white text-sm font-medium px-4 py-2 rounded-full">
                     {zone.time}
                   </div>
                 </div>
 
                 {/* Contenu côté opposé - Style Uber minimal */}
-                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                <div className={`service-content space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                   
                   {/* Badge épuré */}
                   <div className="inline-block bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">
@@ -107,12 +107,12 @@ export default function ZonesService() {
                   
                   {/* Titre principal épuré */}
                   <div>
-                    <h3 className="text-3xl font-black text-black mb-2" style={{
+                    <h3 className="service-title text-responsive-lg text-3xl font-black text-black mb-2" style={{
                       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif'
                     }}>
                       {zone.title}
                     </h3>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-responsive-base text-lg text-gray-600">
                       {zone.details}
                     </p>
                   </div>

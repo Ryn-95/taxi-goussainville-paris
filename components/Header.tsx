@@ -93,12 +93,12 @@ export default function Header() {
         {/* Mobile Navigation - style Uber */}
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200">
-            <div className="px-4 py-4 space-y-4 bg-white">
+            <div className="mobile-menu px-4 py-4 space-y-4 bg-white">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block text-gray-900 hover:text-gray-700 font-medium text-base py-2"
+                  className="mobile-menu-item touch-optimized block text-gray-900 hover:text-gray-700 font-medium text-base py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -114,7 +114,7 @@ export default function Header() {
             </a>
             <a
               href="tel:+33628532473"
-              className="block w-full bg-black text-white font-medium px-4 py-3 rounded-md text-center text-base"
+              className="btn-responsive touch-optimized block w-full bg-black text-white font-medium px-4 py-3 rounded-md text-center text-base"
               onClick={() => setIsMenuOpen(false)}
             >
               Réserver un taxi

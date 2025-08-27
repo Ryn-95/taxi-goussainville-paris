@@ -85,17 +85,17 @@ export default function UberSuggestions() {
   ]
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-responsive">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         {/* Title épuré comme VehiculeSection */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-black text-black mb-2" style={{
+        <div className="text-center mb-16 my-responsive">
+          <h2 className="text-responsive-xl text-3xl font-black text-black mb-2" style={{
             fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif'
           }}>
             Nos services
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-responsive-base text-lg text-gray-600">
             Transport de personnes professionnel et conventionné
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function UberSuggestions() {
         <div className="space-y-20">
           {suggestions.map((item, index) => (
             <div key={index} className="max-w-6xl mx-auto">
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+              <div className={`service-grid auto-responsive-grid grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}>
                 
@@ -115,12 +115,12 @@ export default function UberSuggestions() {
                     alt={item.title}
                     width={600}
                     height={400}
-                    className="w-full h-80 object-cover rounded-xl"
+                    className="service-image image-responsive w-full h-80 object-cover rounded-xl"
                   />
                 </div>
 
                 {/* Contenu côté opposé - Style Uber minimal comme VehiculeSection */}
-                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                <div className={`service-content space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                   
                   {/* Badge épuré */}
                   <div className="inline-block bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">
@@ -129,12 +129,12 @@ export default function UberSuggestions() {
                   
                   {/* Titre principal épuré */}
                   <div>
-                    <h3 className="text-3xl font-black text-black mb-2" style={{
+                    <h3 className="service-title text-responsive-lg text-3xl font-black text-black mb-2" style={{
                       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif'
                     }}>
                       {item.title}
                     </h3>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-responsive-base text-lg text-gray-600">
                       {item.details}
                     </p>
                   </div>

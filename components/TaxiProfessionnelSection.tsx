@@ -4,32 +4,32 @@ import Image from 'next/image'
 
 export default function TaxiProfessionnelSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-responsive">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         {/* Title avec image Skoda */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-black text-black leading-tight mb-6">
+        <div className="text-center mb-16 my-responsive">
+          <h2 className="text-responsive-xl text-4xl lg:text-5xl font-black text-black leading-tight mb-6">
             Taxi professionnel
           </h2>
 
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-responsive-base text-lg text-gray-600 max-w-2xl mx-auto">
             Véhicule récent et confortable pour tous vos déplacements
           </p>
         </div>
 
         {/* Informations professionnelles */}
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="auto-responsive-grid grid grid-cols-1 lg:grid-cols-2 gap-8">
             
             {/* Chauffeur professionnel */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+            <div className="card-responsive bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
               <div className="text-center mb-4">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                <div className="touch-optimized w-16 h-16 bg-black rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
                   👨‍💼
                 </div>
                 <h3 className="font-bold text-black">Chauffeur expérimenté</h3>
-                <p className="text-sm text-gray-600">15+ ans d'expérience • Note 4.9/5</p>
+                <p className="text-responsive-base text-sm text-gray-600">15+ ans d'expérience • Note 4.9/5</p>
               </div>
             </div>
 
@@ -55,7 +55,7 @@ export default function TaxiProfessionnelSection() {
             <div className="lg:col-span-2">
               <a 
                 href="tel:+33628532473"
-                className="w-full bg-black text-white py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center space-x-2 max-w-md mx-auto"
+                className="btn-responsive touch-optimized w-full bg-black text-white py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center space-x-2 max-w-md mx-auto"
               >
                 <span>📞</span>
                 <span>Réserver ce véhicule</span>
