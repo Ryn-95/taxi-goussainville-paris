@@ -223,8 +223,10 @@ export default function RootLayout({
                                                 {/* Google Search Console Verification - UNIQUE ET PROPRE */}
                     <meta name="google-site-verification" content="Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0" />
                     
+                    {/* Microsoft Bing Webmaster Tools Verification */}
+                    <meta name="msvalidate.01" content="31DC9F63FAB886A95204507A27A2D103" />
+                    
                     {/* Optimisation moteurs de recherche */}
-                    <meta name="msvalidate.01" content="taxi-goussainville-bing-verification" />
                     <meta name="yandex-verification" content="taxi-goussainville-yandex-verification" />
         
         {/* Recherche vocale et assistants */}
