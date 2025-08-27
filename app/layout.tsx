@@ -192,6 +192,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
+        {/* VERIFICATION MOTEURS DE RECHERCHE - PRIORITY */}
+        <meta name="google-site-verification" content="Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0" />
+        <meta name="msvalidate.01" content="31DC9F63FAB886A95204507A27A2D103" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                             <link rel="manifest" href="/manifest.webmanifest" />
@@ -220,12 +224,6 @@ export default function RootLayout({
         <meta name="location.specific" content="GOUSSAINVILLE CENTRE, GOUSSAINVILLE GARE, GOUSSAINVILLE RER, GOUSSAINVILLE 95190" />
         <meta name="competition.keywords" content="TAXI GOUSSAINVILLE NUMERO 1, PREMIER TAXI GOUSSAINVILLE, TOP TAXI GOUSSAINVILLE, BEST TAXI GOUSSAINVILLE" />
         
-                                                {/* Google Search Console Verification - UNIQUE ET PROPRE */}
-                    <meta name="google-site-verification" content="Saje42_h-8ob6yO2Xa-D3BSZsqJhwU0rxIoVA7_G1l0" />
-                    
-                    {/* Microsoft Bing Webmaster Tools Verification */}
-                    <meta name="msvalidate.01" content="31DC9F63FAB886A95204507A27A2D103" />
-                    
                     {/* Optimisation moteurs de recherche */}
                     <meta name="yandex-verification" content="taxi-goussainville-yandex-verification" />
         
