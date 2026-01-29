@@ -1,98 +1,104 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
+import ZonesService from '@/components/ZonesService'
+import Testimonials from '@/components/Testimonials'
+import StickyCTA from '@/components/StickyCTA'
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
-  title: '🚖 TAXI GOUSSAINVILLE CDG 06 28 53 24 73 ⭐ TRANSFERT AÉROPORT ROISSY 24H/24',
-  description: '🚖 TAXI GOUSSAINVILLE CDG 06 28 53 24 73 ⭐ TRANSFERT AÉROPORT ROISSY CHARLES DE GAULLE 24H/24 ✈️ Navette Goussainville CDG Terminal 1 2 🏆 MEILLEUR SERVICE PROFESSIONNEL',
-  keywords: [
-    'taxi Goussainville CDG', 'TAXI GOUSSAINVILLE CDG',
-    'navette Goussainville CDG', 'NAVETTE GOUSSAINVILLE CDG',
-    'transfert Goussainville CDG', 'TRANSFERT GOUSSAINVILLE CDG',
-    'taxi Goussainville Roissy', 'TAXI GOUSSAINVILLE ROISSY',
-    'taxi Goussainville aéroport', 'TAXI GOUSSAINVILLE AÉROPORT',
-    'transport Goussainville CDG', 'TRANSPORT GOUSSAINVILLE CDG',
-    'taxi CDG Goussainville', 'TAXI CDG GOUSSAINVILLE',
-    'shuttle Goussainville CDG', 'SHUTTLE GOUSSAINVILLE CDG'
-  ],
+  title: 'Taxi Goussainville CDG - Navette Aéroport Roissy 24/7 | Tarif Fixe',
+  description: 'Réservez votre Taxi Goussainville pour Aéroport Charles de Gaulle (CDG). Trajet rapide 15 min. Tarif fixe sans surprise. Chauffeur ponctuel, véhicule spacieux. Disponible 24h/24.',
+  keywords: ['taxi goussainville cdg', 'taxi goussainville roissy', 'navette goussainville aéroport', 'prix taxi goussainville cdg', 'distance goussainville cdg'],
   alternates: {
-    canonical: 'https://taxi-goussainville-paris.vercel.app/taxi-goussainville-cdg'
-  }
+    canonical: 'https://taxi-goussainville-paris.vercel.app/taxi-goussainville-cdg',
+  },
 }
 
-export default function TaxiGoussainvilleCDGPage() {
+export default function TaxiCDG() {
   return (
-    <main className="min-h-screen pt-24">
-      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl lg:text-5xl font-black text-black mb-6">
-            🚖 TAXI GOUSSAINVILLE CDG
+    <main className="pb-24">
+      {/* Hero Spécifique CDG */}
+      <section className="relative bg-black pt-32 pb-16 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-50">
+          <img 
+            src="/images/aeroport.jpg" 
+            alt="Taxi Goussainville vers Aéroport CDG" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+          <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
+            Taxi Goussainville <span className="text-yellow-400">⇄</span> Aéroport CDG
           </h1>
-          <h2 className="text-2xl font-bold text-gray-700 mb-4">
-            ⭐ TRANSFERT AÉROPORT ROISSY CHARLES DE GAULLE 24H/24
-          </h2>
-          <div className="inline-flex items-center space-x-3 bg-black text-white rounded-xl px-8 py-4 shadow-lg">
-            <span className="text-xl">📞</span>
-            <a href="tel:+33628532473" className="text-xl font-bold">
-              06 28 53 24 73
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+            La liaison la plus rapide et fiable. À partir de 15 minutes de trajet. 
+            Disponible 24h/24 et 7j/7 pour tous les terminaux (1, 2A-G, 3).
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:+33628532473" className="bg-yellow-400 text-black font-bold py-4 px-8 rounded-xl text-lg hover:bg-yellow-300 transition-all transform hover:scale-105">
+              📞 Réserver (06 28 53 24 73)
             </a>
           </div>
         </div>
+      </section>
 
-        <div className="prose max-w-none">
-          <h3 className="text-2xl font-bold mb-4">🚖 Meilleur Service Taxi Goussainville CDG</h3>
-          <p className="text-lg mb-6">
-            <strong>TAXI GOUSSAINVILLE CDG 06 28 53 24 73</strong> - Service professionnel de transfert entre Goussainville et l'aéroport Charles de Gaulle (CDG/Roissy). Transport direct, rapide et fiable 24h/24.
-          </p>
-
-          <h3 className="text-2xl font-bold mb-4">✈️ Transferts CDG Tous Terminaux</h3>
-          <ul className="list-disc pl-6 mb-6">
-            <li><strong>Terminal 1 CDG</strong> - Accès direct depuis Goussainville</li>
-            <li><strong>Terminal 2A, 2B, 2C, 2D, 2E, 2F, 2G</strong> - Tous terminaux couverts</li>
-            <li><strong>Terminal 3 CDG</strong> - Navette Roissybus connectée</li>
-            <li><strong>Surveillance des vols</strong> - Suivi en temps réel</li>
-          </ul>
-
-          <h3 className="text-2xl font-bold mb-4">🏆 Pourquoi Choisir Notre Taxi Goussainville CDG ?</h3>
-          <ul className="list-disc pl-6 mb-6">
-            <li><strong>Distance optimale</strong> - Goussainville proche de CDG (15 minutes)</li>
-            <li><strong>Chauffeur local</strong> - Connaissance parfaite des accès aéroport</li>
-            <li><strong>Service 24h/24</strong> - Départs et arrivées toutes heures</li>
-            <li><strong>Véhicule récent</strong> - Skoda Superb climatisée</li>
-            <li><strong>Tarif fixe</strong> - Pas de surprises, prix transparent</li>
-          </ul>
-
-          <h3 className="text-2xl font-bold mb-4">📞 Réservation Taxi Goussainville CDG</h3>
-          <p className="text-lg mb-6">
-            <strong>Téléphone :</strong> <a href="tel:+33628532473" className="text-blue-600 font-bold">06 28 53 24 73</a><br/>
-            <strong>WhatsApp :</strong> <a href="https://wa.me/33628532473" className="text-green-600 font-bold">Message direct</a><br/>
-            <strong>Disponibilité :</strong> 24 heures sur 24, 7 jours sur 7
-          </p>
-
-          <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-            <h4 className="font-bold text-green-800 mb-2">⚡ Réservation Immédiate</h4>
-            <p className="text-green-700">
-              Appelez le <strong>06 28 53 24 73</strong> pour une prise en charge immédiate ou programmée vers CDG depuis Goussainville.
-            </p>
-          </div>
-
-          <h3 className="text-2xl font-bold mb-4">🗺️ Zones Desservies</h3>
-          <ul className="list-disc pl-6 mb-6">
-            <li><strong>Goussainville Centre</strong> - Prise en charge sous 5 minutes</li>
-            <li><strong>Goussainville Gare RER</strong> - Accès rapide</li>
-            <li><strong>Quartiers résidentiels</strong> - Tout Goussainville couvert</li>
-            <li><strong>Retour CDG</strong> - Prise en charge aéroport vers Goussainville</li>
-          </ul>
-
-          <div className="text-center mt-12">
-            <Link 
-              href="/"
-              className="bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors"
-            >
-              🏠 Retour Accueil
-            </Link>
+      {/* Avantages CDG */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-black mb-12 text-center">Pourquoi nous choisir pour Roissy CDG ?</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-8 rounded-2xl">
+              <div className="text-4xl mb-4">✈️</div>
+              <h3 className="text-xl font-bold mb-3">Suivi de Vol en Direct</h3>
+              <p className="text-gray-600">Nous suivons votre vol en temps réel. En cas de retard, votre chauffeur vous attend sans frais supplémentaires.</p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-2xl">
+              <div className="text-4xl mb-4">⏱️</div>
+              <h3 className="text-xl font-bold mb-3">Proximité Immédiate</h3>
+              <p className="text-gray-600">Situés à Goussainville, nous sommes à seulement 15 minutes des terminaux. Idéal pour les urgences.</p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-2xl">
+              <div className="text-4xl mb-4">🧳</div>
+              <h3 className="text-xl font-bold mb-3">Véhicules Spacieux</h3>
+              <p className="text-gray-600">Berlines et Vans disponibles pour accueillir tous vos bagages et votre famille confortablement.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Contenu SEO Riche */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6 prose prose-lg">
+          <h2 className="text-3xl font-bold mb-6">Votre transfert Taxi de Goussainville vers Roissy Charles de Gaulle</h2>
+          <p className="mb-6">
+            Besoin d'un taxi fiable entre <strong>Goussainville (95190)</strong> et l'aéroport <strong>Roissy Charles de Gaulle (CDG)</strong> ? 
+            Ne cherchez plus. Notre service de taxi local est spécialisé dans cette liaison courte distance.
+          </p>
+          <p className="mb-6">
+            Contrairement aux VTC basés à Paris qui peuvent mettre du temps à arriver, nos chauffeurs sont basés à Goussainville, 
+            garantissant une prise en charge en moins de 10 minutes pour vos départs immédiats.
+          </p>
+          
+          <h3 className="text-2xl font-bold mb-4">Combien coûte un taxi Goussainville - CDG ?</h3>
+          <p className="mb-6">
+            Le tarif est réglementé et transparent. Pour une course de jour (7h-19h) ou de nuit (19h-7h), 
+            nous vous proposons une estimation précise avant le départ. Pas de majoration surprise comme sur les applications.
+            Accepte CB, Espèces et American Express.
+          </p>
+
+          <h3 className="text-2xl font-bold mb-4">Points de rendez-vous aux terminaux</h3>
+          <ul className="list-disc pl-6 mb-6">
+            <li><strong>Terminal 1 :</strong> Porte 24 (Niveau Arrivées)</li>
+            <li><strong>Terminal 2A/2C :</strong> Porte 6</li>
+            <li><strong>Terminal 2E/2F :</strong> Porte 8 (Niveau Arrivées)</li>
+            <li><strong>Terminal 2G :</strong> Porte principale (Zone Taxis Bleus)</li>
+            <li><strong>Terminal 3 :</strong> Sortie principale</li>
+          </ul>
+        </div>
+      </section>
+
+      <ZonesService />
+      <Testimonials />
+      <StickyCTA />
     </main>
   )
 }

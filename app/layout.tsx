@@ -3,8 +3,6 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { JsonLd } from '@/components/JsonLd'
-import { InvisibleSEO } from '@/components/InvisibleSEO'
-import { DynamicSEO } from '@/components/DynamicSEO'
 import { LiveReviews } from '@/components/LiveReviews'
 
 export const metadata: Metadata = {
@@ -277,8 +275,6 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-uber-white text-uber-black">
         <JsonLd />
-        <InvisibleSEO />
-        <DynamicSEO />
         <LiveReviews />
         <Header />
         <main className="min-h-screen">

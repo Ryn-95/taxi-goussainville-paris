@@ -18,19 +18,23 @@ export default function Footer() {
     {
       title: 'Services',
       links: [
-        { name: 'Course immédiate', href: '/services' },
-        { name: 'Réservation à l\'avance', href: '/reservation' },
-        { name: 'Transport médical', href: '/medical' },
-        { name: 'Transfert aéroport', href: '/aeroport' }
+        { name: 'Taxi Aéroport CDG', href: '/taxi-goussainville-cdg' },
+        { name: 'Taxi Aéroport Orly', href: '/taxi-goussainville-orly' },
+        { name: 'Taxi Paris / Gares', href: '/taxi-goussainville-paris' },
+        { name: 'Navette Hôtels Roissy', href: '/navette-hotel-roissy' },
+        { name: 'Zones d\'Intervention (IDF)', href: '/zones-intervention' },
+        { name: 'Guide & Tarifs', href: '/guide' }
       ]
     },
     {
       title: 'Zones de service',
       links: [
-        { name: 'Goussainville', href: '/zones/goussainville' },
-        { name: 'Sarcelles', href: '/zones/sarcelles' },
-        { name: 'Villiers-le-Bel', href: '/zones/villiers' },
-        { name: 'Paris et banlieue', href: '/zones/paris' }
+        { name: 'Taxi Goussainville', href: '/taxi-goussainville-paris' },
+        { name: 'Taxi Louvres', href: '/taxi-louvres' },
+        { name: 'Taxi Fosses', href: '/taxi-fosses' },
+        { name: 'Taxi Roissy-en-France', href: '/taxi-roissy-en-france' },
+        { name: 'Taxi Gonesse', href: '/taxi-gonesse' },
+        { name: 'Taxi Le Thillay', href: '/taxi-goussainville-cdg' }
       ]
     }
   ]

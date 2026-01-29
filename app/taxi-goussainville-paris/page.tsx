@@ -1,125 +1,92 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
+import ZonesService from '@/components/ZonesService'
+import Testimonials from '@/components/Testimonials'
+import StickyCTA from '@/components/StickyCTA'
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd'
 
 export const metadata: Metadata = {
-  title: '🚖 TAXI GOUSSAINVILLE PARIS 06 28 53 24 73 ⭐ TRANSPORT PARIS CENTRE 24H/24',
-  description: '🚖 TAXI GOUSSAINVILLE PARIS 06 28 53 24 73 ⭐ TRANSPORT TOUS ARRONDISSEMENTS PARIS 24H/24 🏛️ Course Goussainville Paris Centre Tour Eiffel Champs Elysées 🏆 MEILLEUR SERVICE',
-  keywords: [
-    'taxi Goussainville Paris', 'TAXI GOUSSAINVILLE PARIS',
-    'transport Goussainville Paris', 'TRANSPORT GOUSSAINVILLE PARIS',
-    'course Goussainville Paris', 'COURSE GOUSSAINVILLE PARIS',
-    'taxi Goussainville centre Paris', 'TAXI GOUSSAINVILLE CENTRE PARIS',
-    'navette Goussainville Paris', 'NAVETTE GOUSSAINVILLE PARIS',
-    'taxi Paris Goussainville', 'TAXI PARIS GOUSSAINVILLE',
-    'trajet Goussainville Paris', 'TRAJET GOUSSAINVILLE PARIS'
-  ],
+  title: 'Taxi Goussainville Paris - Trajet Centre & Gares | Conventionné',
+  description: 'Taxi Goussainville vers Paris Centre, Gare du Nord, Gare de Lyon. Chauffeur VTC alternative. Transport médical conventionné CPAM disponible. Réservation 06 28 53 24 73.',
+  keywords: ['taxi goussainville paris', 'taxi goussainville gare du nord', 'taxi conventionné goussainville', 'vtc goussainville paris', 'prix taxi goussainville paris'],
   alternates: {
-    canonical: 'https://taxi-goussainville-paris.vercel.app/taxi-goussainville-paris'
-  }
+    canonical: 'https://taxi-goussainville-paris.vercel.app/taxi-goussainville-paris',
+  },
 }
 
-export default function TaxiGoussainvilleParisPage() {
+export default function TaxiParis() {
   return (
-    <main className="min-h-screen pt-24">
-      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl lg:text-5xl font-black text-black mb-6">
-            🚖 TAXI GOUSSAINVILLE PARIS
+    <main className="pb-24">
+      <BreadcrumbJsonLd 
+        items={[
+          { name: 'Accueil', url: '/' },
+          { name: 'Taxi Goussainville Paris', url: '/taxi-goussainville-paris' }
+        ]}
+      />
+      <section className="relative bg-black pt-32 pb-16 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-50">
+          <img 
+            src="/images/Course_locale.svg" 
+            alt="Taxi Goussainville vers Paris" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+          <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
+            Taxi Goussainville <span className="text-yellow-400">⇄</span> Paris
           </h1>
-          <h2 className="text-2xl font-bold text-gray-700 mb-4">
-            ⭐ TRANSPORT TOUS ARRONDISSEMENTS PARIS 24H/24
-          </h2>
-          <div className="inline-flex items-center space-x-3 bg-black text-white rounded-xl px-8 py-4 shadow-lg">
-            <span className="text-xl">📞</span>
-            <a href="tel:+33628532473" className="text-xl font-bold">
-              06 28 53 24 73
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+            Rejoignez la capitale rapidement. Accès privilégié aux couloirs de bus. Gares, Hôpitaux et Tourisme.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:+33628532473" className="bg-yellow-400 text-black font-bold py-4 px-8 rounded-xl text-lg hover:bg-yellow-300 transition-all transform hover:scale-105">
+              📞 Commander un Taxi
             </a>
           </div>
         </div>
+      </section>
 
-        <div className="prose max-w-none">
-          <h3 className="text-2xl font-bold mb-4">🚖 Meilleur Service Taxi Goussainville Paris</h3>
-          <p className="text-lg mb-6">
-            <strong>TAXI GOUSSAINVILLE PARIS 06 28 53 24 73</strong> - Service professionnel de transport entre Goussainville et Paris. Desserte de tous les arrondissements parisiens 24h/24.
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 prose prose-lg">
+          <h2 className="text-3xl font-bold mb-6">Service de Taxi Goussainville vers Paris Intramuros</h2>
+          <p className="mb-6">
+            Vous habitez <strong>Goussainville</strong>, <strong>Louvres</strong> ou <strong>Fosses</strong> et vous devez vous rendre à Paris ?
+            Évitez le stress du RER D (retards, grèves, inconfort). Optez pour le confort d'un taxi privé porte-à-porte.
           </p>
-
-          <h3 className="text-2xl font-bold mb-4">🏛️ Paris Tous Arrondissements Couverts</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            <div>
-              <h4 className="font-bold mb-2">🌟 Paris Centre (1er-4e)</h4>
-              <ul className="list-disc pl-6">
-                <li>Châtelet, Louvre, Notre-Dame</li>
-                <li>Marais, Île Saint-Louis</li>
-                <li>Palais Royal, Place Vendôme</li>
+          
+          <h3 className="text-2xl font-bold mb-4">Gares Parisiennes & Hôpitaux</h3>
+          <p className="mb-4">Nous desservons quotidiennement les points stratégiques de la capitale :</p>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <h4 className="font-bold text-lg mb-2">🚂 Gares SNCF</h4>
+              <ul className="list-disc pl-5">
+                <li>Gare du Nord (25-35 min)</li>
+                <li>Gare de l'Est</li>
+                <li>Gare de Lyon</li>
+                <li>Gare Montparnasse</li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-bold mb-2">🗼 Paris Ouest (7e-8e-16e)</h4>
-              <ul className="list-disc pl-6">
-                <li>Tour Eiffel, Trocadéro</li>
-                <li>Champs-Élysées, Arc de Triomphe</li>
-                <li>Bois de Boulogne</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-2">🏛️ Paris Est (11e-12e-20e)</h4>
-              <ul className="list-disc pl-6">
-                <li>Bastille, République</li>
-                <li>Père Lachaise, Belleville</li>
-                <li>Nation, Vincennes</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-2">🎨 Paris Nord (9e-10e-18e)</h4>
-              <ul className="list-disc pl-6">
-                <li>Montmartre, Sacré-Cœur</li>
-                <li>Pigalle, Opéra</li>
-                <li>Gare du Nord, Gare de l'Est</li>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <h4 className="font-bold text-lg mb-2">🏥 Hôpitaux (Conventionné)</h4>
+              <ul className="list-disc pl-5">
+                <li>Hôpital Bichat</li>
+                <li>Hôpital Lariboisière</li>
+                <li>Hôpital Saint-Louis</li>
+                <li>Institut Curie</li>
               </ul>
             </div>
           </div>
 
-          <h3 className="text-2xl font-bold mb-4">🏆 Pourquoi Choisir Notre Taxi Goussainville Paris ?</h3>
-          <ul className="list-disc pl-6 mb-6">
-            <li><strong>Accès direct A1/A86</strong> - Route rapide vers Paris</li>
-            <li><strong>Connaissance parfaite</strong> - Tous arrondissements et boulevards</li>
-            <li><strong>Évitement embouteillages</strong> - Itinéraires optimisés</li>
-            <li><strong>Service jour/nuit</strong> - Transport Paris 24h/24</li>
-            <li><strong>Tarifs compétitifs</strong> - Prix transparents</li>
-          </ul>
-
-          <h3 className="text-2xl font-bold mb-4">📞 Réservation Taxi Goussainville Paris</h3>
-          <p className="text-lg mb-6">
-            <strong>Téléphone :</strong> <a href="tel:+33628532473" className="text-blue-600 font-bold">06 28 53 24 73</a><br/>
-            <strong>WhatsApp :</strong> <a href="https://wa.me/33628532473" className="text-green-600 font-bold">Message direct</a><br/>
-            <strong>Disponibilité :</strong> 24 heures sur 24, 7 jours sur 7
+          <h3 className="text-2xl font-bold mb-4">Taxi vs VTC à Goussainville</h3>
+          <p className="mb-6">
+            Contrairement aux VTC (Uber, Bolt) qui n'ont pas accès aux couloirs de bus, nos taxis empruntent les voies réservées 
+            sur l'autoroute A1 et dans Paris. <strong>Résultat : un gain de temps de 20 à 30 minutes aux heures de pointe.</strong>
           </p>
-
-          <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-8">
-            <h4 className="font-bold text-red-800 mb-2">⚡ Réservation Immédiate</h4>
-            <p className="text-red-700">
-              Appelez le <strong>06 28 53 24 73</strong> pour une prise en charge immédiate vers Paris depuis Goussainville.
-            </p>
-          </div>
-
-          <h3 className="text-2xl font-bold mb-4">🗺️ Destinations Populaires</h3>
-          <ul className="list-disc pl-6 mb-6">
-            <li><strong>Gares parisiennes</strong> - Gare du Nord, Gare de Lyon, Saint-Lazare</li>
-            <li><strong>Monuments</strong> - Tour Eiffel, Arc de Triomphe, Notre-Dame</li>
-            <li><strong>Quartiers d'affaires</strong> - La Défense, Opéra, République</li>
-            <li><strong>Hôpitaux parisiens</strong> - AP-HP, cliniques privées</li>
-          </ul>
-
-          <div className="text-center mt-12">
-            <Link 
-              href="/"
-              className="bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors"
-            >
-              🏠 Retour Accueil
-            </Link>
-          </div>
         </div>
-      </div>
+      </section>
+
+      <ZonesService />
+      <Testimonials />
+      <StickyCTA />
     </main>
   )
 }

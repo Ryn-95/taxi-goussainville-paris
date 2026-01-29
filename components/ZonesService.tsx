@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function ZonesService() {
@@ -11,6 +12,7 @@ export default function ZonesService() {
       details: 'Zone de couverture principale avec temps de réponse garanti sous 5 minutes.',
       time: '< 5 min',
       image: '/images/Course_locale.svg',
+      link: '/services',
       features: [
         'Temps de réponse garanti',
         'Couverture prioritaire',
@@ -24,6 +26,7 @@ export default function ZonesService() {
       details: 'Sarcelles, Villiers-le-Bel, Garges-lès-Gonesse et environs.',
       time: '10-15 min',
       image: '/images/Réservationàl\'avance.jpg',
+      link: '/services',
       features: [
         'Sarcelles et Villiers-le-Bel',
         'Garges-lès-Gonesse',
@@ -37,6 +40,7 @@ export default function ZonesService() {
       details: 'Tous arrondissements parisiens et départements 92, 93, 94.',
       time: '30-45 min',
       image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      link: '/taxi-goussainville-paris',
       features: [
         'Tous arrondissements',
         'Départements 92, 93, 94',
@@ -50,6 +54,7 @@ export default function ZonesService() {
       details: 'Charles de Gaulle, Orly, Le Bourget et Beauvais-Tillé.',
       time: 'Direct',
       image: '/images/aeroport.jpg',
+      link: '/taxi-goussainville-cdg',
       features: [
         'Charles de Gaulle (CDG)',
         'Orly et Le Bourget',
@@ -127,15 +132,25 @@ export default function ZonesService() {
                     ))}
                   </div>
                   
-                  {/* CTA minimal Uber style */}
-                  <div className="pt-4">
+                  {/* CTA minimal Uber style avec lien SEO */}
+                  <div className="pt-4 flex flex-wrap gap-4">
                     <a 
                       href="tel:+33628532473"
-                      className="inline-flex items-center space-x-2 bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all duration-200 text-base"
+                      className="inline-flex items-center space-x-2 bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-all duration-200 text-base"
                     >
                       <span>📞</span>
                       <span>Réserver</span>
                     </a>
+                    
+                    {zone.link && (
+                      <Link 
+                        href={zone.link}
+                        className="inline-flex items-center space-x-2 bg-gray-100 text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-all duration-200 text-base"
+                      >
+                        <span>ℹ️</span>
+                        <span>En savoir plus</span>
+                      </Link>
+                    )}
                   </div>
                   
                 </div>

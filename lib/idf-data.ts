@@ -1,0 +1,158 @@
+export interface CityData {
+  slug: string
+  name: string
+  zip: string
+  department: string
+  departmentName: string
+  distanceFromCDG: string // Approx
+  timeToCDG: string
+}
+
+export const cities: CityData[] = [
+  // --- 95 VAL D'OISE (Priorité Absolue) ---
+  { slug: 'taxi-cergy', name: 'Cergy', zip: '95000', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '45 km', timeToCDG: '40 min' },
+  { slug: 'taxi-pontoise', name: 'Pontoise', zip: '95300', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '48 km', timeToCDG: '45 min' },
+  { slug: 'taxi-argenteuil', name: 'Argenteuil', zip: '95100', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+  { slug: 'taxi-sarcelles', name: 'Sarcelles', zip: '95200', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '20 km', timeToCDG: '25 min' },
+  { slug: 'taxi-garges-les-gonesse', name: 'Garges-lès-Gonesse', zip: '95140', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '15 km', timeToCDG: '20 min' },
+  { slug: 'taxi-franconville', name: 'Franconville', zip: '95130', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '30 km', timeToCDG: '30 min' },
+  { slug: 'taxi-herblay', name: 'Herblay', zip: '95220', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '40 km', timeToCDG: '40 min' },
+  { slug: 'taxi-sannois', name: 'Sannois', zip: '95110', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '32 km', timeToCDG: '35 min' },
+  { slug: 'taxi-bezons', name: 'Bezons', zip: '95870', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '45 km', timeToCDG: '45 min' },
+  { slug: 'taxi-villiers-le-bel', name: 'Villiers-le-Bel', zip: '95400', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '18 km', timeToCDG: '20 min' },
+  { slug: 'taxi-taverny', name: 'Taverny', zip: '95150', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+  { slug: 'taxi-eaubonne', name: 'Eaubonne', zip: '95600', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '28 km', timeToCDG: '30 min' },
+  { slug: 'taxi-cormeilles-en-parisis', name: 'Cormeilles-en-Parisis', zip: '95240', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '38 km', timeToCDG: '40 min' },
+  { slug: 'taxi-deuil-la-barre', name: 'Deuil-la-Barre', zip: '95170', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '22 km', timeToCDG: '25 min' },
+  { slug: 'taxi-montmorency', name: 'Montmorency', zip: '95160', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-saint-gratien', name: 'Saint-Gratien', zip: '95210', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '28 km', timeToCDG: '30 min' },
+  { slug: 'taxi-montigny-les-cormeilles', name: 'Montigny-lès-Cormeilles', zip: '95370', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+  { slug: 'taxi-soisy-sous-montmorency', name: 'Soisy-sous-Montmorency', zip: '95230', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-eragny', name: 'Éragny', zip: '95610', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '42 km', timeToCDG: '40 min' },
+  { slug: 'taxi-jouy-le-moutier', name: 'Jouy-le-Moutier', zip: '95280', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '45 km', timeToCDG: '45 min' },
+  { slug: 'taxi-osny', name: 'Osny', zip: '95520', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '50 km', timeToCDG: '45 min' },
+  { slug: 'taxi-vaureal', name: 'Vauréal', zip: '95490', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '48 km', timeToCDG: '45 min' },
+  { slug: 'taxi-saint-leu-la-foret', name: 'Saint-Leu-la-Forêt', zip: '95320', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '32 km', timeToCDG: '35 min' },
+  { slug: 'taxi-domont', name: 'Domont', zip: '95330', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-saint-brice-sous-foret', name: 'Saint-Brice-sous-Forêt', zip: '95350', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '20 km', timeToCDG: '25 min' },
+  { slug: 'taxi-arnouville', name: 'Arnouville', zip: '95400', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '18 km', timeToCDG: '20 min' },
+  { slug: 'taxi-l-isle-adam', name: "L'Isle-Adam", zip: '95290', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+  { slug: 'taxi-enghien-les-bains', name: 'Enghien-les-Bains', zip: '95880', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-persan', name: 'Persan', zip: '95340', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '38 km', timeToCDG: '40 min' },
+  { slug: 'taxi-beaumont-sur-oise', name: 'Beaumont-sur-Oise', zip: '95260', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '38 km', timeToCDG: '40 min' },
+  { slug: 'taxi-mery-sur-oise', name: 'Méry-sur-Oise', zip: '95540', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+  { slug: 'taxi-ezanville', name: 'Ézanville', zip: '95460', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '22 km', timeToCDG: '25 min' },
+  { slug: 'taxi-nessles-la-vallee', name: 'Nesles-la-Vallée', zip: '95690', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '40 km', timeToCDG: '45 min' },
+  { slug: 'taxi-auvers-sur-oise', name: 'Auvers-sur-Oise', zip: '95430', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-champagne-sur-oise', name: 'Champagne-sur-Oise', zip: '95660', department: '95', departmentName: "Val-d'Oise", distanceFromCDG: '38 km', timeToCDG: '40 min' },
+
+  // --- 93 SEINE SAINT DENIS ---
+  { slug: 'taxi-saint-denis', name: 'Saint-Denis', zip: '93200', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-aubervilliers', name: 'Aubervilliers', zip: '93300', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '22 km', timeToCDG: '25 min' },
+  { slug: 'taxi-aulnay-sous-bois', name: 'Aulnay-sous-Bois', zip: '93600', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '15 km', timeToCDG: '20 min' },
+  { slug: 'taxi-drancy', name: 'Drancy', zip: '93700', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '18 km', timeToCDG: '25 min' },
+  { slug: 'taxi-le-blanc-mesnil', name: 'Le Blanc-Mesnil', zip: '93150', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '15 km', timeToCDG: '20 min' },
+  { slug: 'taxi-pantin', name: 'Pantin', zip: '93500', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-sevran', name: 'Sevran', zip: '93270', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '15 km', timeToCDG: '20 min' },
+  { slug: 'taxi-bobigny', name: 'Bobigny', zip: '93000', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '22 km', timeToCDG: '25 min' },
+  { slug: 'taxi-bondy', name: 'Bondy', zip: '93140', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '20 km', timeToCDG: '25 min' },
+  { slug: 'taxi-epinay-sur-seine', name: 'Épinay-sur-Seine', zip: '93800', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-tremblay-en-france', name: 'Tremblay-en-France', zip: '93290', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '5 km', timeToCDG: '10 min' },
+  { slug: 'taxi-villepinte', name: 'Villepinte', zip: '93420', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '10 km', timeToCDG: '15 min' },
+  { slug: 'taxi-la-courneuve', name: 'La Courneuve', zip: '93120', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '20 km', timeToCDG: '25 min' },
+  { slug: 'taxi-stains', name: 'Stains', zip: '93240', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '18 km', timeToCDG: '20 min' },
+  { slug: 'taxi-dugny', name: 'Dugny', zip: '93440', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '15 km', timeToCDG: '15 min' },
+  { slug: 'taxi-le-bourget', name: 'Le Bourget', zip: '93350', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '18 km', timeToCDG: '20 min' },
+  { slug: 'taxi-montreuil', name: 'Montreuil', zip: '93100', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-noisy-le-grand', name: 'Noisy-le-Grand', zip: '93160', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '28 km', timeToCDG: '30 min' },
+  { slug: 'taxi-rosny-sous-bois', name: 'Rosny-sous-Bois', zip: '93110', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '22 km', timeToCDG: '25 min' },
+  { slug: 'taxi-livry-gargan', name: 'Livry-Gargan', zip: '93190', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '18 km', timeToCDG: '25 min' },
+  { slug: 'taxi-neuilly-plaisance', name: 'Neuilly-Plaisance', zip: '93360', department: '93', departmentName: "Seine-Saint-Denis", distanceFromCDG: '24 km', timeToCDG: '28 min' },
+
+  // --- 77 SEINE ET MARNE ---
+  { slug: 'taxi-meaux', name: 'Meaux', zip: '77100', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '35 km', timeToCDG: '30 min' },
+  { slug: 'taxi-chelles', name: 'Chelles', zip: '77500', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-claye-souilly', name: 'Claye-Souilly', zip: '77410', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '15 km', timeToCDG: '15 min' },
+  { slug: 'taxi-mitry-mory', name: 'Mitry-Mory', zip: '77290', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '10 km', timeToCDG: '12 min' },
+  { slug: 'taxi-dammartin-en-goele', name: 'Dammartin-en-Goële', zip: '77230', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '15 km', timeToCDG: '15 min' },
+  { slug: 'taxi-lagny-sur-marne', name: 'Lagny-sur-Marne', zip: '77400', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '30 km', timeToCDG: '30 min' },
+  { slug: 'taxi-bussy-saint-georges', name: 'Bussy-Saint-Georges', zip: '77600', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '32 km', timeToCDG: '30 min' },
+  { slug: 'taxi-pontault-combault', name: 'Pontault-Combault', zip: '77340', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '40 km', timeToCDG: '40 min' },
+  { slug: 'taxi-melun', name: 'Melun', zip: '77000', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '60 km', timeToCDG: '55 min' },
+  { slug: 'taxi-villeparisis', name: 'Villeparisis', zip: '77270', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '18 km', timeToCDG: '20 min' },
+  { slug: 'taxi-torcy', name: 'Torcy', zip: '77200', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '30 km', timeToCDG: '30 min' },
+  { slug: 'taxi-champs-sur-marne', name: 'Champs-sur-Marne', zip: '77420', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '32 km', timeToCDG: '35 min' },
+  { slug: 'taxi-chessy', name: 'Chessy (Disney)', zip: '77700', department: '77', departmentName: "Seine-et-Marne", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+
+  // --- 60 OISE ---
+  { slug: 'taxi-chantilly', name: 'Chantilly', zip: '60500', department: '60', departmentName: "Oise", distanceFromCDG: '30 km', timeToCDG: '35 min' },
+  { slug: 'taxi-senlis', name: 'Senlis', zip: '60300', department: '60', departmentName: "Oise", distanceFromCDG: '25 km', timeToCDG: '25 min' },
+  { slug: 'taxi-creil', name: 'Creil', zip: '60100', department: '60', departmentName: "Oise", distanceFromCDG: '45 km', timeToCDG: '45 min' },
+  { slug: 'taxi-orry-la-ville', name: 'Orry-la-Ville', zip: '60560', department: '60', departmentName: "Oise", distanceFromCDG: '20 km', timeToCDG: '20 min' },
+  { slug: 'taxi-compiegne', name: 'Compiègne', zip: '60200', department: '60', departmentName: "Oise", distanceFromCDG: '55 km', timeToCDG: '50 min' },
+  { slug: 'taxi-beauvais', name: 'Beauvais', zip: '60000', department: '60', departmentName: "Oise", distanceFromCDG: '75 km', timeToCDG: '60 min' },
+  { slug: 'taxi-gouvieux', name: 'Gouvieux', zip: '60270', department: '60', departmentName: "Oise", distanceFromCDG: '32 km', timeToCDG: '35 min' },
+  { slug: 'taxi-lamorlaye', name: 'Lamorlaye', zip: '60260', department: '60', departmentName: "Oise", distanceFromCDG: '28 km', timeToCDG: '30 min' },
+
+  // --- 92 HAUTS DE SEINE ---
+  { slug: 'taxi-boulogne-billancourt', name: 'Boulogne-Billancourt', zip: '92100', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '40 km', timeToCDG: '45 min' },
+  { slug: 'taxi-nanterre', name: 'Nanterre', zip: '92000', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '45 km', timeToCDG: '45 min' },
+  { slug: 'taxi-courbevoie', name: 'Courbevoie', zip: '92400', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-neuilly-sur-seine', name: 'Neuilly-sur-Seine', zip: '92200', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '32 km', timeToCDG: '35 min' },
+  { slug: 'taxi-levallois-perret', name: 'Levallois-Perret', zip: '92300', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '30 km', timeToCDG: '35 min' },
+  { slug: 'taxi-issy-les-moulineaux', name: 'Issy-les-Moulineaux', zip: '92130', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '42 km', timeToCDG: '50 min' },
+  { slug: 'taxi-la-defense', name: 'La Défense', zip: '92800', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-rueil-malmaison', name: 'Rueil-Malmaison', zip: '92500', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '45 km', timeToCDG: '50 min' },
+  { slug: 'taxi-asnieres-sur-seine', name: 'Asnières-sur-Seine', zip: '92600', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '30 km', timeToCDG: '35 min' },
+  { slug: 'taxi-colombes', name: 'Colombes', zip: '92700', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-clichy', name: 'Clichy', zip: '92110', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '28 km', timeToCDG: '30 min' },
+  { slug: 'taxi-suresnes', name: 'Suresnes', zip: '92150', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '38 km', timeToCDG: '45 min' },
+  { slug: 'taxi-puteaux', name: 'Puteaux', zip: '92800', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-meudon', name: 'Meudon', zip: '92190', department: '92', departmentName: "Hauts-de-Seine", distanceFromCDG: '45 km', timeToCDG: '50 min' },
+
+  // --- 78 YVELINES ---
+  { slug: 'taxi-versailles', name: 'Versailles', zip: '78000', department: '78', departmentName: "Yvelines", distanceFromCDG: '55 km', timeToCDG: '60 min' },
+  { slug: 'taxi-saint-germain-en-laye', name: 'Saint-Germain-en-Laye', zip: '78100', department: '78', departmentName: "Yvelines", distanceFromCDG: '50 km', timeToCDG: '55 min' },
+  { slug: 'taxi-sartrouville', name: 'Sartrouville', zip: '78500', department: '78', departmentName: "Yvelines", distanceFromCDG: '40 km', timeToCDG: '45 min' },
+  { slug: 'taxi-mantes-la-jolie', name: 'Mantes-la-Jolie', zip: '78200', department: '78', departmentName: "Yvelines", distanceFromCDG: '75 km', timeToCDG: '60 min' },
+  { slug: 'taxi-poissy', name: 'Poissy', zip: '78300', department: '78', departmentName: "Yvelines", distanceFromCDG: '50 km', timeToCDG: '50 min' },
+  { slug: 'taxi-conflans-sainte-honorine', name: 'Conflans-Sainte-Honorine', zip: '78700', department: '78', departmentName: "Yvelines", distanceFromCDG: '45 km', timeToCDG: '45 min' },
+  { slug: 'taxi-houilles', name: 'Houilles', zip: '78800', department: '78', departmentName: "Yvelines", distanceFromCDG: '38 km', timeToCDG: '40 min' },
+  { slug: 'taxi-plaisir', name: 'Plaisir', zip: '78370', department: '78', departmentName: "Yvelines", distanceFromCDG: '60 km', timeToCDG: '55 min' },
+  { slug: 'taxi-chatou', name: 'Chatou', zip: '78400', department: '78', departmentName: "Yvelines", distanceFromCDG: '42 km', timeToCDG: '45 min' },
+  { slug: 'taxi-le-chesnay', name: 'Le Chesnay', zip: '78150', department: '78', departmentName: "Yvelines", distanceFromCDG: '52 km', timeToCDG: '55 min' },
+
+  // --- 94 VAL DE MARNE ---
+  { slug: 'taxi-creteil', name: 'Créteil', zip: '94000', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-vincennes', name: 'Vincennes', zip: '94300', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '28 km', timeToCDG: '30 min' },
+  { slug: 'taxi-saint-maur-des-fosses', name: 'Saint-Maur-des-Fossés', zip: '94100', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-vitry-sur-seine', name: 'Vitry-sur-Seine', zip: '94400', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '38 km', timeToCDG: '40 min' },
+  { slug: 'taxi-champigny-sur-marne', name: 'Champigny-sur-Marne', zip: '94500', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '32 km', timeToCDG: '35 min' },
+  { slug: 'taxi-ivry-sur-seine', name: 'Ivry-sur-Seine', zip: '94200', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '35 km', timeToCDG: '40 min' },
+  { slug: 'taxi-maisons-alfort', name: 'Maisons-Alfort', zip: '94700', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+  { slug: 'taxi-fontenay-sous-bois', name: 'Fontenay-sous-Bois', zip: '94120', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '25 km', timeToCDG: '30 min' },
+  { slug: 'taxi-villejuif', name: 'Villejuif', zip: '94800', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '38 km', timeToCDG: '40 min' },
+  { slug: 'taxi-choisy-le-roi', name: 'Choisy-le-Roi', zip: '94600', department: '94', departmentName: "Val-de-Marne", distanceFromCDG: '35 km', timeToCDG: '35 min' },
+
+  // --- 91 ESSONNE (Nouveau) ---
+  { slug: 'taxi-evry-courcouronnes', name: 'Évry-Courcouronnes', zip: '91000', department: '91', departmentName: "Essonne", distanceFromCDG: '55 km', timeToCDG: '55 min' },
+  { slug: 'taxi-corbeil-essonnes', name: 'Corbeil-Essonnes', zip: '91100', department: '91', departmentName: "Essonne", distanceFromCDG: '60 km', timeToCDG: '60 min' },
+  { slug: 'taxi-massy', name: 'Massy', zip: '91300', department: '91', departmentName: "Essonne", distanceFromCDG: '50 km', timeToCDG: '50 min' },
+  { slug: 'taxi-savigny-sur-orge', name: 'Savigny-sur-Orge', zip: '91600', department: '91', departmentName: "Essonne", distanceFromCDG: '45 km', timeToCDG: '45 min' },
+  { slug: 'taxi-sainte-genevieve-des-bois', name: 'Sainte-Geneviève-des-Bois', zip: '91700', department: '91', departmentName: "Essonne", distanceFromCDG: '50 km', timeToCDG: '50 min' },
+  { slug: 'taxi-palaiseau', name: 'Palaiseau', zip: '91120', department: '91', departmentName: "Essonne", distanceFromCDG: '52 km', timeToCDG: '55 min' },
+  { slug: 'taxi-athis-mons', name: 'Athis-Mons', zip: '91200', department: '91', departmentName: "Essonne", distanceFromCDG: '40 km', timeToCDG: '40 min' },
+  { slug: 'taxi-vigneux-sur-seine', name: 'Vigneux-sur-Seine', zip: '91270', department: '91', departmentName: "Essonne", distanceFromCDG: '42 km', timeToCDG: '45 min' },
+  { slug: 'taxi-viry-chatillon', name: 'Viry-Châtillon', zip: '91170', department: '91', departmentName: "Essonne", distanceFromCDG: '45 km', timeToCDG: '45 min' },
+]
+
+export const departments = [
+  { code: '95', name: "Val-d'Oise" },
+  { code: '93', name: "Seine-Saint-Denis" },
+  { code: '77', name: "Seine-et-Marne" },
+  { code: '60', name: "Oise" },
+  { code: '92', name: "Hauts-de-Seine" },
+  { code: '78', name: "Yvelines" },
+  { code: '94', name: "Val-de-Marne" },
+  { code: '91', name: "Essonne" },
+]
